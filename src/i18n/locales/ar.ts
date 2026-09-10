@@ -119,7 +119,7 @@ export const ar: Translations = {
     process: 'المنهجية ومراحل العمل',
     impact: 'الأثر والنتائج',
     backToSelectedWorks: 'العودة إلى الأعمال المختارة',
-    backToTop: 'العودة للأعلى ↑',
+    backToTop: 'العودة للأعلى',
     clientContext: 'العميل / السياق',
     timeframe: 'الإطار الزمني',
     coreFocus: 'التركيز الأساسي',

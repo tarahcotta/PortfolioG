@@ -565,14 +565,11 @@ export const CaseStudyModal: React.FC<CaseStudyModalProps> = ({
                   }}
                   className="group flex flex-col justify-between p-6 rounded-2xl border border-zinc-200 dark:border-zinc-800 hover:border-indigo-600 dark:hover:border-indigo-400 bg-zinc-50/80 dark:bg-zinc-900/60 hover:bg-white dark:hover:bg-zinc-900 text-start transition-all shadow-sm hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-600 min-h-[110px]"
                 >
-                  <div className="flex items-center justify-between w-full mb-3">
+                  <div className="flex items-center justify-start w-full mb-3">
                     <span className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
                       <ArrowLeft className="w-4 h-4 rtl:rotate-180" aria-hidden="true" />
                       <span>{t.modal.prevProject}</span>
                     </span>
-                    <kbd className="px-2 py-0.5 text-[10px] font-mono font-bold bg-zinc-200/80 dark:bg-zinc-800 rounded border border-zinc-300/80 dark:border-zinc-700 text-zinc-600 dark:text-zinc-400">
-                      ←
-                    </kbd>
                   </div>
                   <div>
                     <h4 className="text-base sm:text-lg font-bold text-zinc-900 dark:text-zinc-100 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors break-words line-clamp-1">
@@ -593,10 +590,7 @@ export const CaseStudyModal: React.FC<CaseStudyModalProps> = ({
                   }}
                   className="group flex flex-col justify-between p-6 rounded-2xl border border-zinc-200 dark:border-zinc-800 hover:border-indigo-600 dark:hover:border-indigo-400 bg-zinc-50/80 dark:bg-zinc-900/60 hover:bg-white dark:hover:bg-zinc-900 text-end transition-all shadow-sm hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-600 min-h-[110px]"
                 >
-                  <div className="flex items-center justify-between w-full mb-3">
-                    <kbd className="px-2 py-0.5 text-[10px] font-mono font-bold bg-zinc-200/80 dark:bg-zinc-800 rounded border border-zinc-300/80 dark:border-zinc-700 text-zinc-600 dark:text-zinc-400">
-                      →
-                    </kbd>
+                  <div className="flex items-center justify-end w-full mb-3">
                     <span className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
                       <span>{t.modal.nextProject}</span>
                       <ArrowRight className="w-4 h-4 rtl:rotate-180" aria-hidden="true" />

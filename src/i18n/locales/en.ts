@@ -119,7 +119,7 @@ export const en: Translations = {
     process: 'Process & Iteration',
     impact: 'Impact & Results',
     backToSelectedWorks: 'Back to Selected Works',
-    backToTop: 'Back to top ↑',
+    backToTop: 'Back to top',
     clientContext: 'Client / Context',
     timeframe: 'Timeframe',
     coreFocus: 'Core Focus',
