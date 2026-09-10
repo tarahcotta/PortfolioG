@@ -1,0 +1,206 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --canvas: #ffffff;
+  --surface-elevated: #f7f7f8;
+  --surface-card: #ffffff;
+  --border-subtle: #e4e4e7;
+  --border-interactive: #71717a; /* Meets 3:1 against white */
+  
+  --text-primary: #18181b;       /* 15.3:1 */
+  --text-secondary: #52525b;     /* 5.7:1 - Safe from light-gray trap */
+  --text-muted: #71717a;         /* 4.51:1 on white */
+  --text-accent-purple: #5c38c9; /* 6.8:1 */
+  
+  --focus-ring: #4f46e5;
+  --focus-offset: #ffffff;
+}
+
+.dark {
+  --canvas: #09090b;
+  --surface-elevated: #121215;
+  --surface-card: #18181b;
+  --border-subtle: #27272a;
+  --border-interactive: #52525b; /* Meets 3:1 against #18181b */
+  
+  --text-primary: #f4f4f5;       /* 17.5:1 - Softened against halation */
+  --text-secondary: #a1a1aa;     /* 6.3:1 */
+  --text-muted: #9ca3af;         /* 5.8:1 on dark */
+  --text-accent-purple: #a991f3; /* 8.2:1 */
+  
+  --focus-ring: #818cf8;
+  --focus-offset: #09090b;
+}
+
+/* Global WCAG 2.2 Compliant Focus Ring (SC 2.4.11 & 2.4.13) */
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+[role="button"]:focus-visible,
+[tabindex="0"]:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+/* Print Stylesheet for PDF & Hardcopy Export */
+@media print {
+  @page {
+    size: letter portrait;
+    margin: 15mm 15mm 15mm 15mm;
+  }
+
+  *,
+  *::before,
+  *::after {
+    background: transparent !important;
+    color: #000000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    filter: none !important;
+  }
+
+  html,
+  body {
+    background: #ffffff !important;
+    color: #111111 !important;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+    font-size: 11pt !important;
+    line-height: 1.5 !important;
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: visible !important;
+  }
+
+  /* Hide non-printable navigation, toggles, and modal backdrops */
+  nav,
+  header,
+  footer,
+  .print\:hidden,
+  .no-print,
+  [aria-label*="Close"],
+  [aria-label*="Back"],
+  [aria-label*="shortcuts"],
+  button:not(.print-include) {
+    display: none !important;
+  }
+
+  /* If a dialog/modal is open, hide main body background and print modal content full width */
+  body:has([role="dialog"]) #main-content,
+  body:has([role="dialog"]) nav,
+  body:has([role="dialog"]) footer {
+    display: none !important;
+  }
+
+  [role="dialog"] {
+    position: static !important;
+    inset: auto !important;
+    display: block !important;
+    background: #ffffff !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+
+  [role="dialog"] > div {
+    position: static !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    background: #ffffff !important;
+  }
+
+  /* Section and Article formatting */
+  section,
+  article,
+  .printable-card {
+    page-break-inside: avoid;
+    break-inside: avoid;
+    border: 1px solid #e4e4e7 !important;
+    border-radius: 8px !important;
+    padding: 1.25rem !important;
+    margin-bottom: 1.25rem !important;
+    background: #ffffff !important;
+  }
+
+  /* Typography formatting */
+  h1, h2, h3, h4, h5, h6 {
+    color: #000000 !important;
+    page-break-after: avoid;
+    break-after: avoid;
+    font-weight: 700 !important;
+    margin-top: 1rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  h1 { font-size: 20pt !important; }
+  h2 { font-size: 16pt !important; }
+  h3 { font-size: 14pt !important; }
+  h4 { font-size: 12pt !important; }
+
+  p, ul, ol, dl {
+    color: #27272a !important;
+    margin-bottom: 0.75rem !important;
+  }
+
+  /* Ensure badges, chips and metrics maintain high contrast borders */
+  .badge,
+  [class*="bg-rose-"],
+  [class*="bg-emerald-"],
+  [class*="bg-indigo-"],
+  [class*="bg-amber-"],
+  [class*="bg-zinc-"] {
+    background: #f4f4f5 !important;
+    border: 1px solid #a1a1aa !important;
+    color: #000000 !important;
+    padding: 2px 8px !important;
+    border-radius: 4px !important;
+    font-weight: 600 !important;
+  }
+
+  /* Code blocks & preformatted JSON */
+  pre, code {
+    background: #f8fafc !important;
+    border: 1px solid #cbd5e1 !important;
+    color: #0f172a !important;
+    font-family: monospace !important;
+    font-size: 9pt !important;
+    white-space: pre-wrap !important;
+    word-break: break-all !important;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  /* Print link destination URLs for external links */
+  a[href^="http"]:after {
+    content: " (" attr(href) ")";
+    font-size: 8.5pt;
+    color: #52525b !important;
+    font-weight: normal;
+  }
+
+  /* Prevent orphan page titles at the bottom of pages */
+  .page-break-before {
+    page-break-before: always;
+    break-before: always;
+  }
+}

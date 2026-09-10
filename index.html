@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tarah Cotta UX Portfolio</title>
+    <meta name="description" content="Showcase UX design work and expertise through an interactive portfolio featuring project case studies, AI workflow integration, and Figma administration capabilities for staff-level designers." />
+    <meta property="og:title" content="Tarah Cotta UX Portfolio" />
+    <meta property="og:description" content="Showcase UX design work and expertise through an interactive portfolio featuring project case studies, AI workflow integration, and Figma administration capabilities for staff-level designers." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script>
+      (function() {
+        try {
+          var saved = localStorage.getItem('theme');
+          var isDark = saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches);
+          if (isDark) {
+            document.documentElement.classList.add('dark');
+          } else {
+            document.documentElement.classList.remove('dark');
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
