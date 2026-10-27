@@ -122,7 +122,7 @@ Leadership: Design Operations (DesignOps)*, Cross-Functional Leadership*, UX Com
 
 PROFESSIONAL EXPERIENCE
 Staff Product Designer (ITS Professional III)
-National Laboratories of the Rockies | October 2021 – Present
+National Laboratory of the Rockies | October 2021 – Present
 • Architected and governed the laboratory's first enterprise design system, establishing reusable component libraries, multi-theme design tokens, and design standards across 15 enterprise applications.
 • Administered Figma Enterprise and Figma for Government environments for 100+ multidisciplinary users, establishing organization-wide component governance, shared UI kits, and DesignOps workflows.
 • Led enterprise-wide WCAG 2.2 AA accessibility initiatives, embedding audit standards, automated testing tools, and compliance checklists directly into the design and software development lifecycle.
@@ -131,13 +131,13 @@ National Laboratories of the Rockies | October 2021 – Present
 • Founded and led the internal UX Community of Practice, hosting workshops, design critiques, and coaching sessions to elevate design maturity across engineering leaders, product owners, and executive stakeholders.
 
 Developer & Product Designer (ITS Professional II)
-National Laboratories of the Rockies | April 2019 – October 2021
+National Laboratory of the Rockies | April 2019 – October 2021
 • Transitioned from software engineering into product design to lead the modernization of internal legacy tools and complex enterprise applications.
 • Conducted UX and accessibility audits across enterprise tools, presenting actionable findings to executive leadership to shift organizational focus toward intuitive user workflows rather than mandatory staff training.
 • Leveraged full-stack development experience to establish technical feasibility standards and streamline designer-developer component handoffs.
 
 Full-Stack Developer (ITS Professional I)
-National Laboratories of the Rockies | October 2018 – April 2019
+National Laboratory of the Rockies | October 2018 – April 2019
 • Engineered and maintained internal web applications supporting mission-critical laboratory operations using React, JavaScript, and responsive CSS frameworks.
 • Implemented accessible front-end interfaces and partnered with project managers to refine system requirements, building the technical foundation for cross-functional design leadership.
 
@@ -154,7 +154,7 @@ Awards: Chairperson's Award (2025) • President's Award (2024)`;
     // Generates a downloadable clean text file asset and triggers browser save
     const plainText = `TARAH COTTA
 Staff Product Designer (ITS Professional III)
-National Laboratories of the Rockies
+National Laboratory of the Rockies
 Denver, CO | tarahcotta@gmail.com | linkedin.com/in/tarah-cotta | github.com/tarahcotta | tarahcotta.studio
 
 PROFESSIONAL SUMMARY
@@ -168,7 +168,7 @@ Leadership: Design Operations (DesignOps)*, Cross-Functional Leadership*, UX Com
 
 PROFESSIONAL EXPERIENCE
 Staff Product Designer (ITS Professional III)
-National Laboratories of the Rockies | October 2021 – Present
+National Laboratory of the Rockies | October 2021 – Present
 • Architected and governed the laboratory's first enterprise design system, establishing reusable component libraries, multi-theme design tokens, and design standards across 15 enterprise applications.
 • Administered Figma Enterprise and Figma for Government environments for 100+ multidisciplinary users, establishing organization-wide component governance, shared UI kits, and DesignOps workflows.
 • Led enterprise-wide WCAG 2.2 AA accessibility initiatives, embedding audit standards, automated testing tools, and compliance checklists directly into the design and software development lifecycle.
@@ -177,13 +177,13 @@ National Laboratories of the Rockies | October 2021 – Present
 • Founded and led the internal UX Community of Practice, hosting workshops, design critiques, and coaching sessions to elevate design maturity across engineering leaders, product owners, and executive stakeholders.
 
 Developer & Product Designer (ITS Professional II)
-National Laboratories of the Rockies | April 2019 – October 2021
+National Laboratory of the Rockies | April 2019 – October 2021
 • Transitioned from software engineering into product design to lead the modernization of internal legacy tools and complex enterprise applications.
 • Conducted UX and accessibility audits across enterprise tools, presenting actionable findings to executive leadership to shift organizational focus toward intuitive user workflows rather than mandatory staff training.
 • Leveraged full-stack development experience to establish technical feasibility standards and streamline designer-developer component handoffs.
 
 Full-Stack Developer (ITS Professional I)
-National Laboratories of the Rockies | October 2018 – April 2019
+National Laboratory of the Rockies | October 2018 – April 2019
 • Engineered and maintained internal web applications supporting mission-critical laboratory operations using React, JavaScript, and responsive CSS frameworks.
 • Implemented accessible front-end interfaces and partnered with project managers to refine system requirements, building the technical foundation for cross-functional design leadership.
 
@@ -310,7 +310,7 @@ Awards: Chairperson's Award (2025) • President's Award (2024)`;
         {
           title: 'Staff Product Designer (ITS Professional III)',
           dates: 'October 2021 – Present',
-          company: 'National Laboratories of the Rockies',
+          company: 'National Laboratory of the Rockies',
           bullets: [
             "Architected and governed the laboratory's first enterprise design system, establishing reusable component libraries, multi-theme design tokens, and design standards across 15 enterprise applications.",
             "Administered Figma Enterprise and Figma for Government environments for 100+ multidisciplinary users, establishing organization-wide component governance, shared UI kits, and DesignOps workflows.",
@@ -323,7 +323,7 @@ Awards: Chairperson's Award (2025) • President's Award (2024)`;
         {
           title: 'Developer & Product Designer (ITS Professional II)',
           dates: 'April 2019 – October 2021',
-          company: 'National Laboratories of the Rockies',
+          company: 'National Laboratory of the Rockies',
           bullets: [
             "Transitioned from software engineering into product design to lead the modernization of internal legacy tools and complex enterprise applications.",
             "Conducted UX and accessibility audits across enterprise tools, presenting actionable findings to executive leadership to shift organizational focus toward intuitive user workflows rather than mandatory staff training.",
@@ -333,7 +333,7 @@ Awards: Chairperson's Award (2025) • President's Award (2024)`;
         {
           title: 'Full-Stack Developer (ITS Professional I)',
           dates: 'October 2018 – April 2019',
-          company: 'National Laboratories of the Rockies',
+          company: 'National Laboratory of the Rockies',
           bullets: [
             "Engineered and maintained internal web applications supporting mission-critical laboratory operations using React, JavaScript, and responsive CSS frameworks.",
             "Implemented accessible front-end interfaces and partnered with project managers to refine system requirements, building the technical foundation for cross-functional design leadership."
@@ -678,7 +678,7 @@ Awards: Chairperson's Award (2025) • President's Award (2024)`;
                   </span>
                 </div>
                 <p className="text-xs font-semibold text-indigo-600 dark:text-indigo-400 print:text-zinc-800">
-                  National Laboratories of the Rockies
+                  National Laboratory of the Rockies
                 </p>
                 <ul className="list-disc list-outside ms-4 space-y-1.5 text-xs sm:text-xs leading-relaxed text-zinc-700 dark:text-zinc-300 print:text-zinc-900 pt-0.5">
                   <li>
@@ -713,7 +713,7 @@ Awards: Chairperson's Award (2025) • President's Award (2024)`;
                   </span>
                 </div>
                 <p className="text-xs font-semibold text-indigo-600 dark:text-indigo-400 print:text-zinc-800">
-                  National Laboratories of the Rockies
+                  National Laboratory of the Rockies
                 </p>
                 <ul className="list-disc list-outside ms-4 space-y-1.5 text-xs sm:text-xs leading-relaxed text-zinc-700 dark:text-zinc-300 print:text-zinc-900 pt-0.5">
                   <li>
@@ -739,7 +739,7 @@ Awards: Chairperson's Award (2025) • President's Award (2024)`;
                   </span>
                 </div>
                 <p className="text-xs font-semibold text-indigo-600 dark:text-indigo-400 print:text-zinc-800">
-                  National Laboratories of the Rockies
+                  National Laboratory of the Rockies
                 </p>
                 <ul className="list-disc list-outside ms-4 space-y-1.5 text-xs sm:text-xs leading-relaxed text-zinc-700 dark:text-zinc-300 print:text-zinc-900 pt-0.5">
                   <li>

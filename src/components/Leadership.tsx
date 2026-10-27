@@ -141,7 +141,7 @@ export const Leadership: React.FC<LeadershipProps> = ({ isLoading }) => {
         'Established component library publishing workflows with mandatory branch review protocols',
         'Audited organization seats quarterly, reducing idle seat licensing overhead by 40%',
       ],
-      caseStudyTitle: 'National Laboratories of the Rockies',
+      caseStudyTitle: 'National Laboratory of the Rockies',
       caseStudyText: 'Governed enterprise Figma environments across 15 scientific applications, establishing shared UI kits, design token deprecation schedules, and DesignOps governance.',
     },
     {
