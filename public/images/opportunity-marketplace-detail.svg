@@ -1,0 +1,226 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap');
+      text { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    </style>
+    <filter id="detail-shadow" x="-3%" y="-3%" width="106%" height="106%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="1600" height="1000" fill="#F1F5F9"/>
+
+  <!-- Top App Navigation Bar -->
+  <rect width="1600" height="68" fill="#0F172A"/>
+  <g transform="translate(32, 17)">
+    <rect width="34" height="34" rx="8" fill="#3B82F6"/>
+    <circle cx="12" cy="12" r="3" fill="#FFFFFF"/>
+    <circle cx="22" cy="12" r="3" fill="#93C5FD"/>
+    <circle cx="17" cy="22" r="3" fill="#FFFFFF"/>
+    <text x="48" y="16" fill="#FFFFFF" font-size="14" font-weight="800">NATIONAL LABORATORY OF THE ROCKIES</text>
+    <text x="48" y="30" fill="#94A3B8" font-size="10" font-weight="600" letter-spacing="1">OPPORTUNITY MARKETPLACE · CANDIDATE ALIGNMENT MODAL</text>
+  </g>
+
+  <!-- Breadcrumb bar -->
+  <rect y="68" width="1600" height="52" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+  <g transform="translate(48, 100)">
+    <text x="0" y="0" fill="#64748B" font-size="13" font-weight="500">← Back to Opportunity Feed</text>
+    <text x="180" y="0" fill="#CBD5E1" font-size="13">/</text>
+    <text x="196" y="0" fill="#3B82F6" font-size="13" font-weight="600">OPP-2024-082: Renewable Grid Stability Simulation</text>
+    <text x="560" y="0" fill="#CBD5E1" font-size="13">/</text>
+    <text x="576" y="0" fill="#0F172A" font-size="13" font-weight="700">Applicant Review &amp; Delegate Routing</text>
+  </g>
+
+  <!-- Main Split-Screen Container -->
+  <g transform="translate(48, 144)">
+    
+    <!-- LEFT PANEL: Opportunity Spec Sheet (Width: 620) -->
+    <g filter="url(#detail-shadow)">
+      <rect width="620" height="800" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+      
+      <g transform="translate(36, 36)">
+        <rect x="0" y="0" width="130" height="26" rx="13" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1"/>
+        <text x="65" y="17" fill="#1D4ED8" font-size="11" font-weight="700" text-anchor="middle">ACTIVE SPRINT</text>
+
+        <text x="0" y="60" fill="#0F172A" font-size="22" font-weight="800">Renewable Grid Stability Simulation</text>
+        <text x="0" y="82" fill="#64748B" font-size="13">Directorate: Energy Systems Integration · Lab 04</text>
+
+        <!-- Lead details -->
+        <g transform="translate(0, 108)">
+          <rect width="548" height="64" rx="12" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+          <circle cx="36" cy="32" r="18" fill="#E0E7FF"/>
+          <text x="36" y="37" fill="#4338CA" font-size="12" font-weight="700" text-anchor="middle">EM</text>
+          <text x="66" y="27" fill="#0F172A" font-size="13" font-weight="700">Dr. Elena Martinez</text>
+          <text x="66" y="44" fill="#64748B" font-size="11">Lead Modeling Engineer · Primary Project Lead</text>
+          
+          <rect x="410" y="16" width="120" height="32" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1"/>
+          <text x="470" y="36" fill="#334155" font-size="11" font-weight="600" text-anchor="middle">Delegate: R. Torres</text>
+        </g>
+
+        <!-- Scope & Background -->
+        <text x="0" y="210" fill="#0F172A" font-size="14" font-weight="700">Sprint Objective &amp; Responsibilities</text>
+        <text x="0" y="234" fill="#475569" font-size="13" font-weight="400">
+          The team needs a computational researcher with power-system dynamics expertise
+        </text>
+        <text x="0" y="254" fill="#475569" font-size="13" font-weight="400">
+          to benchmark transient stability under 80%+ renewable inverter penetration.
+        </text>
+        <text x="0" y="274" fill="#475569" font-size="13" font-weight="400">
+          Work is scheduled for 8 hrs/wk across a 10-week sprint cycle.
+        </text>
+
+        <!-- Requirements Grid -->
+        <rect x="0" y="306" width="548" height="150" rx="12" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+        <g transform="translate(20, 330)">
+          <text x="0" y="0" fill="#94A3B8" font-size="11" font-weight="700">REQUIRED COMPETENCIES</text>
+          <text x="280" y="0" fill="#94A3B8" font-size="11" font-weight="700">ESTIMATED WORKLOAD</text>
+
+          <g transform="translate(0, 16)">
+            <text x="0" y="20" fill="#1E293B" font-size="13" font-weight="600">• Python 3.10+ (NumPy / SciPy)</text>
+            <text x="0" y="44" fill="#1E293B" font-size="13" font-weight="600">• GridLAB-D or OpenDSS simulation</text>
+            <text x="0" y="68" fill="#1E293B" font-size="13" font-weight="600">• Time-Series Data Pipelines</text>
+
+            <text x="280" y="20" fill="#1E293B" font-size="13" font-weight="600">• 8 Hours per week</text>
+            <text x="280" y="44" fill="#1E293B" font-size="13" font-weight="600">• 10 Weeks duration (80 hrs total)</text>
+            <text x="280" y="68" fill="#059669" font-size="13" font-weight="700">• No financial billing re-code</text>
+          </g>
+        </g>
+
+        <!-- People Strategy Equity Note -->
+        <rect x="0" y="480" width="548" height="96" rx="12" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="1"/>
+        <g transform="translate(20, 506)">
+          <circle cx="12" cy="8" r="8" fill="#10B981"/>
+          <text x="12" y="12" fill="#FFFFFF" font-size="10" font-weight="800" text-anchor="middle">i</text>
+          <text x="28" y="12" fill="#065F46" font-size="13" font-weight="700">People Strategy Equity Principle</text>
+          <text x="0" y="38" fill="#047857" font-size="12">
+            This opportunity is designed for professional development and knowledge sharing.
+          </text>
+          <text x="0" y="56" fill="#047857" font-size="12">
+            Participation is governed by transparent manager notification and mutual agreement.
+          </text>
+        </g>
+      </g>
+    </g>
+
+    <!-- RIGHT PANEL: Candidate Alignment & Delegate Actions (Width: 840) -->
+    <g transform="translate(648, 0)" filter="url(#detail-shadow)">
+      <rect width="840" height="800" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+
+      <g transform="translate(40, 36)">
+        <div style="display: flex;">
+          <text x="0" y="0" fill="#0F172A" font-size="20" font-weight="800">Candidate Alignment &amp; Interest Review</text>
+          <text x="640" y="0" fill="#64748B" font-size="12" font-weight="600">3 Staff Interested</text>
+        </div>
+        <text x="0" y="24" fill="#64748B" font-size="13">Review profile competencies, availability match, and delegate authorization status.</text>
+
+        <!-- CANDIDATE ROW 1: Tarah Cotta / Lead Match (96%) -->
+        <g transform="translate(0, 54)">
+          <rect width="760" height="210" rx="14" fill="#F8FAFC" stroke="#3B82F6" stroke-width="2"/>
+          
+          <g transform="translate(24, 24)">
+            <!-- Avatar -->
+            <circle cx="24" cy="24" r="24" fill="#3B82F6"/>
+            <text x="24" y="31" fill="#FFFFFF" font-size="16" font-weight="800" text-anchor="middle">TC</text>
+            
+            <text x="64" y="18" fill="#0F172A" font-size="16" font-weight="800">Tarah Cotta (You)</text>
+            <text x="64" y="38" fill="#64748B" font-size="12">Staff Product Designer &amp; Computational UX · Enterprise Systems</text>
+
+            <rect x="620" y="0" width="90" height="28" rx="14" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="1"/>
+            <text x="665" y="18" fill="#065F46" font-size="12" font-weight="700" text-anchor="middle">96% Match</text>
+
+            <!-- Skills chips -->
+            <g transform="translate(0, 70)">
+              <text x="0" y="0" fill="#475569" font-size="11" font-weight="700">VERIFIED SKILLS:</text>
+              <g transform="translate(100, -12)">
+                <rect x="0" y="0" width="80" height="24" rx="12" fill="#EFF6FF" stroke="#93C5FD" stroke-width="1"/>
+                <text x="40" y="16" fill="#1D4ED8" font-size="11" font-weight="600" text-anchor="middle">✓ Python</text>
+
+                <rect x="88" y="0" width="130" height="24" rx="12" fill="#EFF6FF" stroke="#93C5FD" stroke-width="1"/>
+                <text x="153" y="16" fill="#1D4ED8" font-size="11" font-weight="600" text-anchor="middle">✓ Grid Modeling</text>
+
+                <rect x="226" y="0" width="130" height="24" rx="12" fill="#EFF6FF" stroke="#93C5FD" stroke-width="1"/>
+                <text x="291" y="16" fill="#1D4ED8" font-size="11" font-weight="600" text-anchor="middle">✓ Data Pipelines</text>
+              </g>
+            </g>
+
+            <!-- Availability & Manager Status -->
+            <g transform="translate(0, 114)">
+              <rect width="712" height="42" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+              <text x="16" y="26" fill="#334155" font-size="12" font-weight="600">Availability: 8 hrs/wk confirmed</text>
+              <text x="260" y="26" fill="#334155" font-size="12" font-weight="600">Directorate Delegate: Approved (M. Adams)</text>
+              <rect x="580" y="6" width="120" height="30" rx="6" fill="#3B82F6"/>
+              <text x="640" y="25" fill="#FFFFFF" font-size="11" font-weight="700" text-anchor="middle">Connected ✓</text>
+            </g>
+          </g>
+        </g>
+
+        <!-- CANDIDATE ROW 2: Research Contributor 2 -->
+        <g transform="translate(0, 280)">
+          <rect width="760" height="170" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+          
+          <g transform="translate(24, 24)">
+            <circle cx="24" cy="24" r="24" fill="#F1F5F9"/>
+            <text x="24" y="31" fill="#475569" font-size="16" font-weight="800" text-anchor="middle">KL</text>
+            
+            <text x="64" y="18" fill="#0F172A" font-size="15" font-weight="700">Kenji Lin</text>
+            <text x="64" y="38" fill="#64748B" font-size="12">Postdoctoral Fellow · Power Systems Integration</text>
+
+            <rect x="620" y="0" width="90" height="28" rx="14" fill="#F0FDF4"/>
+            <text x="665" y="18" fill="#166534" font-size="12" font-weight="700" text-anchor="middle">84% Match</text>
+
+            <g transform="translate(0, 70)">
+              <text x="0" y="0" fill="#475569" font-size="11" font-weight="700">SKILLS:</text>
+              <g transform="translate(60, -12)">
+                <rect x="0" y="0" width="80" height="24" rx="12" fill="#F1F5F9"/>
+                <text x="40" y="16" fill="#334155" font-size="11" text-anchor="middle">Python</text>
+
+                <rect x="88" y="0" width="100" height="24" rx="12" fill="#F1F5F9"/>
+                <text x="138" y="16" fill="#334155" font-size="11" text-anchor="middle">GridLAB-D</text>
+
+                <rect x="196" y="0" width="140" height="24" rx="12" fill="#FEF2F2"/>
+                <text x="266" y="16" fill="#991B1B" font-size="11" text-anchor="middle">Waitlist on Availability</text>
+              </g>
+            </g>
+          </g>
+        </g>
+
+        <!-- CANDIDATE ROW 3: Research Contributor 3 -->
+        <g transform="translate(0, 466)">
+          <rect width="760" height="170" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+          
+          <g transform="translate(24, 24)">
+            <circle cx="24" cy="24" r="24" fill="#F1F5F9"/>
+            <text x="24" y="31" fill="#475569" font-size="16" font-weight="800" text-anchor="middle">AR</text>
+            
+            <text x="64" y="18" fill="#0F172A" font-size="15" font-weight="700">Amira Rahman</text>
+            <text x="64" y="38" fill="#64748B" font-size="12">Research Scientist · Computational Science Center</text>
+
+            <rect x="620" y="0" width="90" height="28" rx="14" fill="#F0FDF4"/>
+            <text x="665" y="18" fill="#166534" font-size="12" font-weight="700" text-anchor="middle">81% Match</text>
+
+            <g transform="translate(0, 70)">
+              <text x="0" y="0" fill="#475569" font-size="11" font-weight="700">SKILLS:</text>
+              <g transform="translate(60, -12)">
+                <rect x="0" y="0" width="140" height="24" rx="12" fill="#EFF6FF"/>
+                <text x="70" y="16" fill="#1D4ED8" font-size="11" text-anchor="middle">High Performance Py</text>
+
+                <rect x="148" y="0" width="100" height="24" rx="12" fill="#F1F5F9"/>
+                <text x="198" y="16" fill="#334155" font-size="11" text-anchor="middle">Simulation</text>
+              </g>
+            </g>
+          </g>
+        </g>
+
+        <!-- Bottom Action Bar -->
+        <g transform="translate(0, 660)">
+          <rect width="760" height="60" rx="12" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+          <text x="20" y="35" fill="#64748B" font-size="12" font-weight="500">Weekly co-design session scheduled for Thursday 2:00 PM MT</text>
+          <rect x="520" y="12" width="220" height="36" rx="8" fill="#0F172A"/>
+          <text x="630" y="34" fill="#FFFFFF" font-size="12" font-weight="700" text-anchor="middle">Send Delegate Notification</text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

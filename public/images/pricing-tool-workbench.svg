@@ -1,0 +1,286 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap');
+      text { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+      .mono { font-family: 'JetBrains Mono', monospace; }
+    </style>
+    <filter id="pt-shadow" x="-3%" y="-3%" width="106%" height="106%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.07"/>
+    </filter>
+    <linearGradient id="pt-header" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1E1B4B"/>
+      <stop offset="100%" stop-color="#312E81"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="1600" height="1000" fill="#F8FAFC"/>
+
+  <!-- Top App Navigation Bar -->
+  <rect width="1600" height="70" fill="url(#pt-header)"/>
+  
+  <!-- Logo & Title -->
+  <g transform="translate(32, 18)">
+    <rect width="36" height="36" rx="8" fill="#4F46E5"/>
+    <!-- Financial graph symbol -->
+    <path d="M10 26 L16 18 L22 22 L27 10" stroke="#FFFFFF" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <text x="50" y="16" fill="#FFFFFF" font-size="15" font-weight="800" letter-spacing="0.5">NATIONAL LABORATORY OF THE ROCKIES</text>
+    <text x="50" y="31" fill="#C7D2FE" font-size="11" font-weight="600" letter-spacing="1.2">ENTERPRISE PRICING ENGINE · COST MODELING &amp; EPM INTEGRATION</text>
+  </g>
+
+  <!-- Navigation items -->
+  <g transform="translate(860, 24)">
+    <text x="0" y="16" fill="#C7D2FE" font-size="12" font-weight="600">Estimates (18)</text>
+    <rect x="110" y="-4" width="124" height="28" rx="14" fill="#4F46E5"/>
+    <text x="172" y="15" fill="#FFFFFF" font-size="12" font-weight="700" text-anchor="middle">Active Workbench</text>
+    <text x="260" y="16" fill="#94A3B8" font-size="12" font-weight="500">Rate Schedules</text>
+    <text x="380" y="16" fill="#94A3B8" font-size="12" font-weight="500">EPM Export Logs</text>
+    <text x="510" y="16" fill="#94A3B8" font-size="12" font-weight="500">Audit History</text>
+  </g>
+
+  <!-- Active Proposal Header Bar -->
+  <rect y="70" width="1600" height="120" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+  <g transform="translate(48, 96)">
+    <!-- Estimate ID & Title -->
+    <div style="display:flex">
+      <rect x="0" y="0" width="112" height="24" rx="6" fill="#EEF2FF" stroke="#C7D2FE" stroke-width="1"/>
+      <text x="56" y="16" fill="#4338CA" font-size="11" font-weight="700" text-anchor="middle" class="mono">EST-2024-8841</text>
+      <text x="124" y="18" fill="#0F172A" font-size="20" font-weight="800">Advanced Solar Microgrid &amp; Storage Integration Pilot</text>
+    </div>
+
+    <!-- Subtitle metadata -->
+    <text x="0" y="46" fill="#64748B" font-size="13">
+      Client: U.S. Dept of Energy (EERE) · Lead Investigator: Dr. K. Sullivan · Period of Performance: FY2025–FY2027 (36 Months)
+    </text>
+
+    <!-- Top Action Buttons on Right -->
+    <g transform="translate(1040, -4)">
+      <!-- EPM Sync Status Badge -->
+      <rect x="0" y="0" width="154" height="38" rx="8" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="1"/>
+      <circle cx="20" cy="19" r="5" fill="#10B981"/>
+      <text x="32" y="24" fill="#065F46" font-size="12" font-weight="700">EPM SCHEMA VALID</text>
+
+      <!-- Recalculate Burdens Button -->
+      <rect x="166" y="0" width="154" height="38" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1"/>
+      <text x="243" y="24" fill="#334155" font-size="12" font-weight="700" text-anchor="middle">Apply FY24 Burdens</text>
+
+      <!-- Submit for Approval Button -->
+      <rect x="332" y="0" width="180" height="38" rx="8" fill="#4F46E5"/>
+      <text x="422" y="24" fill="#FFFFFF" font-size="12" font-weight="700" text-anchor="middle">Route for Approval →</text>
+    </g>
+  </g>
+
+  <!-- Stepper Bar (Item 1 & Recommendation 1) -->
+  <rect y="190" width="1600" height="50" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+  <g transform="translate(48, 208)">
+    <!-- Step 1 Complete -->
+    <circle cx="12" cy="12" r="10" fill="#10B981"/>
+    <text x="12" y="16" fill="#FFFFFF" font-size="10" font-weight="800" text-anchor="middle">✓</text>
+    <text x="32" y="16" fill="#059669" font-size="12" font-weight="700">1. Scope of Work (Completed)</text>
+    <line x1="210" y1="12" x2="280" y2="12" stroke="#10B981" stroke-width="2"/>
+
+    <!-- Step 2 Active -->
+    <circle cx="300" cy="12" r="10" fill="#4F46E5"/>
+    <text x="300" y="16" fill="#FFFFFF" font-size="10" font-weight="800" text-anchor="middle">2</text>
+    <text x="320" y="16" fill="#4338CA" font-size="12" font-weight="800">2. Labor &amp; Burdens Matrix (Active Editing)</text>
+    <line x1="570" y1="12" x2="640" y2="12" stroke="#CBD5E1" stroke-width="2"/>
+
+    <!-- Step 3 Inactive -->
+    <circle cx="660" cy="12" r="10" fill="#E2E8F0"/>
+    <text x="660" y="16" fill="#64748B" font-size="10" font-weight="800" text-anchor="middle">3</text>
+    <text x="680" y="16" fill="#64748B" font-size="12" font-weight="600">3. Financial Analyst Review</text>
+    <line x1="850" y1="12" x2="920" y2="12" stroke="#CBD5E1" stroke-width="2"/>
+
+    <!-- Step 4 Inactive -->
+    <circle cx="940" cy="12" r="10" fill="#E2E8F0"/>
+    <text x="940" y="16" fill="#64748B" font-size="10" font-weight="800" text-anchor="middle">4</text>
+    <text x="960" y="16" fill="#64748B" font-size="12" font-weight="600">4. Automated EPM Push</text>
+
+    <!-- Formula Engine status on right -->
+    <g transform="translate(1310, 2)">
+      <text x="0" y="14" fill="#64748B" font-size="11" font-weight="600">Lab Burden Rate Schedule: Rev 2024.3</text>
+    </g>
+  </g>
+
+  <!-- SUMMARY CARDS ROW -->
+  <g transform="translate(48, 260)">
+    <!-- Card 1: Fully Burdened Total Proposal Cost -->
+    <g filter="url(#pt-shadow)">
+      <rect width="288" height="96" rx="12" fill="#FFFFFF" stroke="#4F46E5" stroke-width="1.5"/>
+      <g transform="translate(20, 22)">
+        <text x="0" y="0" fill="#64748B" font-size="11" font-weight="700" letter-spacing="0.5">TOTAL PROPOSAL COST</text>
+        <text x="0" y="32" fill="#1E1B4B" font-size="26" font-weight="900" class="mono">$1,420,500.00</text>
+        <text x="0" y="52" fill="#059669" font-size="11" font-weight="600">Govt Compliant (FAR 31.2)</text>
+      </g>
+    </g>
+
+    <!-- Card 2: Direct Labor -->
+    <g transform="translate(304, 0)" filter="url(#pt-shadow)">
+      <rect width="288" height="96" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+      <g transform="translate(20, 22)">
+        <text x="0" y="0" fill="#64748B" font-size="11" font-weight="700">DIRECT LABOR BASE</text>
+        <text x="0" y="32" fill="#0F172A" font-size="24" font-weight="800" class="mono">$684,200.00</text>
+        <text x="0" y="52" fill="#64748B" font-size="11">4,280 Total Planned Hours</text>
+      </g>
+    </g>
+
+    <!-- Card 3: Fringe & Overhead Burdens -->
+    <g transform="translate(608, 0)" filter="url(#pt-shadow)">
+      <rect width="288" height="96" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+      <g transform="translate(20, 22)">
+        <text x="0" y="0" fill="#64748B" font-size="11" font-weight="700">LAB BURDENS &amp; OVERHEAD</text>
+        <text x="0" y="32" fill="#0F172A" font-size="24" font-weight="800" class="mono">$512,100.00</text>
+        <text x="0" y="52" fill="#4F46E5" font-size="11" font-weight="600">Calculated Rate: 74.84%</text>
+      </g>
+    </g>
+
+    <!-- Card 4: Subcontracts & Travel -->
+    <g transform="translate(912, 0)" filter="url(#pt-shadow)">
+      <rect width="288" height="96" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+      <g transform="translate(20, 22)">
+        <text x="0" y="0" fill="#64748B" font-size="11" font-weight="700">NON-LABOR ODC &amp; TRAVEL</text>
+        <text x="0" y="32" fill="#0F172A" font-size="24" font-weight="800" class="mono">$224,200.00</text>
+        <text x="0" y="52" fill="#64748B" font-size="11">Subcontractors + Test Equip</text>
+      </g>
+    </g>
+
+    <!-- Card 5: Error Reduction Metric Impact -->
+    <g transform="translate(1216, 0)" filter="url(#pt-shadow)">
+      <rect width="288" height="96" rx="12" fill="#EEF2FF" stroke="#C7D2FE" stroke-width="1"/>
+      <g transform="translate(20, 22)">
+        <text x="0" y="0" fill="#4338CA" font-size="11" font-weight="800">AUTOMATED EPM ACCURACY</text>
+        <text x="0" y="32" fill="#4338CA" font-size="26" font-weight="900">95% Error Drop</text>
+        <text x="0" y="52" fill="#4338CA" font-size="11" font-weight="600">Zero spreadsheet re-entry</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- MAIN STRUCTURED ESTIMATE GRID -->
+  <g transform="translate(48, 380)" filter="url(#pt-shadow)">
+    <rect width="1504" height="570" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+
+    <!-- Table Toolbar -->
+    <rect width="1504" height="52" rx="14" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+    <g transform="translate(24, 32)">
+      <text x="0" y="0" fill="#0F172A" font-size="14" font-weight="800">Labor Breakdown Structure (WBS 1.0 – 3.0)</text>
+      <text x="320" y="0" fill="#64748B" font-size="12">Role-Aware Column Filtering Active</text>
+      
+      <!-- Toolbar controls on right -->
+      <g transform="translate(1080, -14)">
+        <rect x="0" y="0" width="110" height="30" rx="6" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1"/>
+        <text x="55" y="19" fill="#334155" font-size="11" font-weight="600" text-anchor="middle">+ Add WBS Row</text>
+
+        <rect x="120" y="0" width="130" height="30" rx="6" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1"/>
+        <text x="185" y="19" fill="#334155" font-size="11" font-weight="600" text-anchor="middle">Bulk Apply Rates</text>
+
+        <rect x="260" y="0" width="110" height="30" rx="6" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1"/>
+        <text x="315" y="19" fill="#334155" font-size="11" font-weight="600" text-anchor="middle">Export XLS / EPM</text>
+      </g>
+    </g>
+
+    <!-- Table Header Row -->
+    <rect y="52" width="1504" height="40" fill="#F1F5F9" stroke="#E2E8F0" stroke-width="1"/>
+    <g transform="translate(24, 76)" fill="#475569" font-size="11" font-weight="700">
+      <text x="0" y="0">WBS CODE</text>
+      <text x="110" y="0">TASK DESCRIPTION</text>
+      <text x="430" y="0">STAFF MEMBER / ROLE</text>
+      <text x="670" y="0">LABOR GRADE</text>
+      <text x="820" y="0" text-anchor="end">RAW RATE</text>
+      <text x="940" y="0" text-anchor="end">HOURS</text>
+      <text x="1080" y="0" text-anchor="end">DIRECT COST</text>
+      <text x="1220" y="0" text-anchor="end">BURDEN %</text>
+      <text x="1390" y="0" text-anchor="end">BURDENED TOTAL</text>
+      <text x="1440" y="0">STATUS</text>
+    </g>
+
+    <!-- ROW 1 -->
+    <rect y="92" width="1504" height="54" fill="#FFFFFF" stroke="#F1F5F9" stroke-width="1"/>
+    <g transform="translate(24, 124)">
+      <text x="0" y="0" fill="#4F46E5" font-size="12" font-weight="700" class="mono">1.1.0</text>
+      <text x="110" y="0" fill="#0F172A" font-size="12" font-weight="600">Grid Modeling &amp; Inverter Simulation</text>
+      <text x="430" y="0" fill="#0F172A" font-size="12">Dr. Elena Martinez (Lead)</text>
+      <text x="670" y="0" fill="#64748B" font-size="11">Scientist V (SCI-5)</text>
+      <text x="820" y="0" fill="#0F172A" font-size="12" text-anchor="end" class="mono">$142.50</text>
+      <text x="940" y="0" fill="#0F172A" font-size="12" text-anchor="end" class="mono">640</text>
+      <text x="1080" y="0" fill="#0F172A" font-size="12" text-anchor="end" class="mono">$91,200.00</text>
+      <text x="1220" y="0" fill="#4F46E5" font-size="12" text-anchor="end" font-weight="600" class="mono">74.84%</text>
+      <text x="1390" y="0" fill="#0F172A" font-size="12" font-weight="700" text-anchor="end" class="mono">$159,454.08</text>
+      <circle cx="1454" cy="-4" r="5" fill="#10B981"/>
+    </g>
+
+    <!-- ROW 2 -->
+    <rect y="146" width="1504" height="54" fill="#F8FAFC" stroke="#F1F5F9" stroke-width="1"/>
+    <g transform="translate(24, 178)">
+      <text x="0" y="0" fill="#4F46E5" font-size="12" font-weight="700" class="mono">1.2.0</text>
+      <text x="110" y="0" fill="#0F172A" font-size="12" font-weight="600">Battery Cell Characterization &amp; Cycling</text>
+      <text x="430" y="0" fill="#0F172A" font-size="12">Sarah Chen, PhD</text>
+      <text x="670" y="0" fill="#64748B" font-size="11">Scientist IV (SCI-4)</text>
+      <text x="820" y="0" fill="#0F172A" font-size="12" text-anchor="end" class="mono">$128.00</text>
+      <text x="940" y="0" fill="#0F172A" font-size="12" text-anchor="end" class="mono">820</text>
+      <text x="1080" y="0" fill="#0F172A" font-size="12" text-anchor="end" class="mono">$104,960.00</text>
+      <text x="1220" y="0" fill="#4F46E5" font-size="12" text-anchor="end" font-weight="600" class="mono">74.84%</text>
+      <text x="1390" y="0" fill="#0F172A" font-size="12" font-weight="700" text-anchor="end" class="mono">$183,512.06</text>
+      <circle cx="1454" cy="-4" r="5" fill="#10B981"/>
+    </g>
+
+    <!-- ROW 3 -->
+    <rect y="200" width="1504" height="54" fill="#FFFFFF" stroke="#F1F5F9" stroke-width="1"/>
+    <g transform="translate(24, 232)">
+      <text x="0" y="0" fill="#4F46E5" font-size="12" font-weight="700" class="mono">2.1.0</text>
+      <text x="110" y="0" fill="#0F172A" font-size="12" font-weight="600">Platform UX &amp; Data Pipeline Architecture</text>
+      <text x="430" y="0" fill="#0F172A" font-size="12">Tarah Cotta</text>
+      <text x="670" y="0" fill="#64748B" font-size="11">ITS Professional III</text>
+      <text x="820" y="0" fill="#0F172A" font-size="12" text-anchor="end" class="mono">$134.50</text>
+      <text x="940" y="0" fill="#0F172A" font-size="12" text-anchor="end" class="mono">950</text>
+      <text x="1080" y="0" fill="#0F172A" font-size="12" text-anchor="end" class="mono">$127,775.00</text>
+      <text x="1220" y="0" fill="#4F46E5" font-size="12" text-anchor="end" font-weight="600" class="mono">74.84%</text>
+      <text x="1390" y="0" fill="#0F172A" font-size="12" font-weight="700" text-anchor="end" class="mono">$223,401.81</text>
+      <circle cx="1454" cy="-4" r="5" fill="#10B981"/>
+    </g>
+
+    <!-- ROW 4 -->
+    <rect y="254" width="1504" height="54" fill="#F8FAFC" stroke="#F1F5F9" stroke-width="1"/>
+    <g transform="translate(24, 286)">
+      <text x="0" y="0" fill="#4F46E5" font-size="12" font-weight="700" class="mono">2.2.0</text>
+      <text x="110" y="0" fill="#0F172A" font-size="12" font-weight="600">Full-Stack Interface Engineering</text>
+      <text x="430" y="0" fill="#0F172A" font-size="12">Engineering Staff Pool</text>
+      <text x="670" y="0" fill="#64748B" font-size="11">ITS Professional II</text>
+      <text x="820" y="0" fill="#0F172A" font-size="12" text-anchor="end" class="mono">$112.00</text>
+      <text x="940" y="0" fill="#0F172A" font-size="12" text-anchor="end" class="mono">1,120</text>
+      <text x="1080" y="0" fill="#0F172A" font-size="12" text-anchor="end" class="mono">$125,440.00</text>
+      <text x="1220" y="0" fill="#4F46E5" font-size="12" text-anchor="end" font-weight="600" class="mono">74.84%</text>
+      <text x="1390" y="0" fill="#0F172A" font-size="12" font-weight="700" text-anchor="end" class="mono">$219,319.29</text>
+      <circle cx="1454" cy="-4" r="5" fill="#10B981"/>
+    </g>
+
+    <!-- ROW 5 -->
+    <rect y="308" width="1504" height="54" fill="#FFFFFF" stroke="#F1F5F9" stroke-width="1"/>
+    <g transform="translate(24, 340)">
+      <text x="0" y="0" fill="#4F46E5" font-size="12" font-weight="700" class="mono">3.1.0</text>
+      <text x="110" y="0" fill="#0F172A" font-size="12" font-weight="600">Safety &amp; Compliance Validation</text>
+      <text x="430" y="0" fill="#0F172A" font-size="12">Industrial Safety Team</text>
+      <text x="670" y="0" fill="#64748B" font-size="11">EHS Safety Lead</text>
+      <text x="820" y="0" fill="#0F172A" font-size="12" text-anchor="end" class="mono">$118.00</text>
+      <text x="940" y="0" fill="#0F172A" font-size="12" text-anchor="end" class="mono">750</text>
+      <text x="1080" y="0" fill="#0F172A" font-size="12" text-anchor="end" class="mono">$88,500.00</text>
+      <text x="1220" y="0" fill="#4F46E5" font-size="12" text-anchor="end" font-weight="600" class="mono">74.84%</text>
+      <text x="1390" y="0" fill="#0F172A" font-size="12" font-weight="700" text-anchor="end" class="mono">$154,733.40</text>
+      <circle cx="1454" cy="-4" r="5" fill="#10B981"/>
+    </g>
+
+    <!-- TOTAL FOOTER BAR -->
+    <rect y="480" width="1504" height="88" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1" rx="0 0 14 14"/>
+    <g transform="translate(24, 528)">
+      <text x="0" y="0" fill="#0F172A" font-size="14" font-weight="800">TOTAL DIRECT LABOR + BURDEN SUMMARY</text>
+      <text x="0" y="22" fill="#64748B" font-size="11">Burdens applied automatically based on FY24 Approved Rate Schedule</text>
+      
+      <text x="940" y="0" fill="#0F172A" font-size="14" font-weight="800" text-anchor="end" class="mono">4,280 hrs</text>
+      <text x="1080" y="0" fill="#0F172A" font-size="14" font-weight="800" text-anchor="end" class="mono">$537,875.00</text>
+      <text x="1220" y="0" fill="#4F46E5" font-size="14" font-weight="800" text-anchor="end" class="mono">74.84% Avg</text>
+      <text x="1390" y="0" fill="#1E1B4B" font-size="18" font-weight="900" text-anchor="end" class="mono">$940,420.64</text>
+      <rect x="1410" y="-18" width="80" height="28" rx="6" fill="#10B981"/>
+      <text x="1450" y="0" fill="#FFFFFF" font-size="11" font-weight="700" text-anchor="middle">Synced ✓</text>
+    </g>
+  </g>
+</svg>

@@ -34,12 +34,10 @@ export const CASE_STUDIES: CaseStudy[] = [
     ],
     process: "I mapped the existing process across contributors, project leads, and delegates to find where it broke down. Beta feedback through office hours, idea-voting forms, and 1:1 interviews surfaced issues with filters, profile completeness, and delegation. Weekly updates turned that feedback into targeted improvements. I kept the scope lightweight and separate from financial and planning systems to avoid unnecessary dependencies.",
     accentColor: "blue",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1600&q=80",
+    image: "/images/opportunity-marketplace-dashboard.svg",
     images: [
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1600&q=80",
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1600&q=80",
-      "https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=1600&q=80",
-      "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1600&q=80"
+      "/images/opportunity-marketplace-dashboard.svg",
+      "/images/opportunity-marketplace-detail.svg"
     ]
   },
   {
@@ -75,7 +73,11 @@ export const CASE_STUDIES: CaseStudy[] = [
     ],
     process: "I mapped role-based workflows across three user types to see where estimation fragmented. A competitive review of enterprise pricing tools helped set expectations for feature density. From there, I designed a role-aware grid with inline approval routing and delegate signatures. QA feedback from financial analysts shaped iterations on category handling and date logic, including edge cases the spreadsheet process had hidden.",
     accentColor: "indigo",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1600&q=80"
+    image: "/images/pricing-tool-workbench.svg",
+    images: [
+      "/images/pricing-tool-workbench.svg",
+      "/images/pricing-tool-approvals.svg"
+    ]
   },
   {
     id: 1,
@@ -110,7 +112,11 @@ export const CASE_STUDIES: CaseStudy[] = [
     ],
     process: "I began with field research into how researchers, technicians, and safety officers used the paper and spreadsheet process. Three failures surfaced: missing hazard data when work began, unauthorized work caused by decentralized qualification tracking, and equipment-status gaps between team spreadsheets. I designed a step-by-step authorization flow with mandatory safety checks and role-based visibility, so each person saw the actions and information relevant to their authorization level.",
     accentColor: "purple",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1600&q=80"
+    image: "/images/work-planning-control-dashboard.svg",
+    images: [
+      "/images/work-planning-control-dashboard.svg",
+      "/images/work-planning-control-gate.svg"
+    ]
   }
 ];
 

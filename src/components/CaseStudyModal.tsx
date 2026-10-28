@@ -411,6 +411,7 @@ export const CaseStudyModal: React.FC<CaseStudyModalProps> = ({
             <img
               src={study.image || study.imageUrl}
               alt={study.title}
+              referrerPolicy="no-referrer"
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-zinc-950/0 group-hover:bg-zinc-950/40 transition-all flex items-center justify-center">
@@ -452,6 +453,7 @@ export const CaseStudyModal: React.FC<CaseStudyModalProps> = ({
                     <img
                       src={imgUrl}
                       alt={`${study.title} screen ${imgIdx + 1}`}
+                      referrerPolicy="no-referrer"
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                       loading="lazy"
                     />
@@ -674,6 +676,7 @@ export const CaseStudyModal: React.FC<CaseStudyModalProps> = ({
             <img
               src={allGalleryImages[lightboxIndex]}
               alt={`${study.title} artifact ${lightboxIndex + 1}`}
+              referrerPolicy="no-referrer"
               className="max-h-[82vh] max-w-full object-contain rounded-xl shadow-2xl select-none"
             />
 

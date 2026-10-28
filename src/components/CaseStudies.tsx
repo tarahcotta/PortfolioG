@@ -161,6 +161,7 @@ const CardHeroImage: React.FC<{ study: CaseStudy; isFeatured?: boolean }> = ({ s
     <img
       src={imgSrc}
       alt={study.imageAlt || study.title}
+      referrerPolicy="no-referrer"
       onError={() => setImgError(true)}
       className={`w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 ${
         isFeatured ? 'min-h-[260px] lg:min-h-[380px]' : 'min-h-[200px]'
